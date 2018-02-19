@@ -9,10 +9,15 @@ import { StatusBarComponent } from './status-bar/status-bar.component';
 import { ScreenService } from './services/screen.services';
 import { ScreenBelowLarge } from './directives/screen-below-large.directive';
 import { ScreenLarge } from './directives/screen-large.directive';
+import { MenuService } from './services/menu.services';
+import { MenuComponent } from './menus/menu/menu.component';
+import { MenuItemComponent } from './menus/menu-item/menu-item.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   declarations: [
     FrameworkBodyComponent,
@@ -21,14 +26,17 @@ import { ScreenLarge } from './directives/screen-large.directive';
     TopBarComponent,
     StatusBarComponent,
     ScreenBelowLarge,
-    ScreenLarge
+    ScreenLarge,
+    MenuComponent,
+    MenuItemComponent
   ],
   exports:[
     FrameworkBodyComponent
   ],
   providers: [
     FrameworkConfigService,
-    ScreenService
+    ScreenService,
+    MenuService
   ]
 })
 export class FwModule { }
