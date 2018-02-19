@@ -7,6 +7,8 @@ import { TitleBarComponent } from './title-bar/title-bar.component';
 import { FrameworkConfigService } from './services/framework-config.service';
 import { StatusBarComponent } from './status-bar/status-bar.component';
 import { ScreenService } from './services/screen.services';
+import { ScreenBelowLarge } from './directives/screen-below-large.directive';
+import { ScreenLarge } from './directives/screen-large.directive';
 
 @NgModule({
   imports: [
@@ -17,7 +19,9 @@ import { ScreenService } from './services/screen.services';
     ContentComponent,
     TitleBarComponent,
     TopBarComponent,
-    StatusBarComponent
+    StatusBarComponent,
+    ScreenBelowLarge,
+    ScreenLarge
   ],
   exports:[
     FrameworkBodyComponent

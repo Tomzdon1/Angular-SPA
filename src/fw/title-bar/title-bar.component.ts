@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TitleBarComponent implements OnInit {
 
-  constructor(private screenService: ScreenService) { 
-    
+  constructor(public screenService: ScreenService) {
+
   }
 
   ngOnInit() {
