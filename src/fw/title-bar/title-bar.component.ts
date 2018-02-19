@@ -1,3 +1,4 @@
+import { ScreenService } from './../services/screen.services';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TitleBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private screenService: ScreenService) { 
+    
+  }
 
   ngOnInit() {
   }
