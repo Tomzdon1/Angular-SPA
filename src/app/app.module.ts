@@ -20,7 +20,7 @@ import { CountryMaintComponent } from './country-maint/country-maint.component';
     SettingsComponent,
     CountryDetailComponent,
     CountryListComponent,
-    CountryMaintComponent,
+    CountryMaintComponent
   ],
   imports: [
     BrowserModule,
