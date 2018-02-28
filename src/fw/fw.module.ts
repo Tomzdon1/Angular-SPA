@@ -17,6 +17,7 @@ import { RouterModule } from '@angular/router';
 import { PopupMenuComponent } from './menus/popup-menu/popup-menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignInComponent } from './users/sign-in/sign-in.component';
+import { RegisterUserComponent } from './users/register-user/register-user.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { SignInComponent } from './users/sign-in/sign-in.component';
     MenuComponent,
     MenuItemComponent,
     PopupMenuComponent,
-    SignInComponent
+    SignInComponent,
+    RegisterUserComponent
   ],
   exports:[
     FrameworkBodyComponent
